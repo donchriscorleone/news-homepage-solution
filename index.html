@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+  <header class="container header">
+    <nav class="nav flex">
+      <a href="#" class="link link--icon icon--brand"></a>
+      <ul class="list list--inline">
+        <li class="list__item">
+          <a href="#" class="link link--text color-accent-400 fs-400">Home</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link link--text color-accent-400 fs-400">New</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link link--text color-accent-400 fs-400">Popular</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link link--text color-accent-400 fs-400">Trending</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link link--text color-accent-400 fs-400">Categories</a>
+        </li>
+      </ul>
+      <a href="#" class="link link--icon icon--burger"></a>
+    </nav>
+  </header>
+
+  <main class="main container" style="--padding-inline: .75rem; --padding-block: .5rem;">
+    <div class="banner">
+      <div class="banner__image-container">
+        <picture>
+          <source srcset="./assets/images/image-web-3-desktop.jpg"
+                  media="(min-width: 800px)">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="Picture of Web3">
+      </picture>
+      </div>
+      <div class="banner__heading">
+        <h1 class="banner__title fw-extra-bold fs-800">The Bright Future of Web 3.0?</h1>
+        <p class="banner__paragraph fs-400 color-accent-400 line-height" style="--line-height: 1.5;">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?
+        </p>
+        <button class="btn fs-300 color-accent-100 bg-primary-500">Read More</button>
+      </div>
+    </div>
+
+    <div class="container-md article--new-container bg-accent-500">
+      <h2 class="article__new-header color-primary-400 fs-700">New</h2>
+      <div class="article--new">
+        <h3 class="article__heading fs-500 color-accent-100">
+          <a href="#" class="link link--text">Hydrogen VS Electric Cars</a>
+        </h3>
+        <p class="article__content fs-300 color-accent-200">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <div class="article--new">
+        <h3 class="article__heading fs-500 color-accent-100">
+          <a href="#" class="link link--text">The Downsides of AI Artistry</a>
+        </h3>
+        <p class="article__content fs-300 color-accent-200">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="article--new">
+        <h3 class="article__heading fs-500 color-accent-100">
+          <a href="#" class="link link--text">Is VC Funding Drying Up?</a>
+        </h3>
+        <p class="article__content fs-300 color-accent-200">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+    
+    <div class="article--numbered-container">
+      <div class="article--numbered">
+        <div class="article--numbered__image-container">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="A picture of retro computer">
+        </div>
+        <div class="article--numbered__content">
+          <span class="color-accent-200 fs-700 fw-bold">01</span>
+          <a href="#" class="link link--text color-accent-500 fw-bold">Reviving retro PC's</a>
+          <span class="fs-300 color-accent-400 line-height" style="--line-height: 1.75;">What happens when old PCs are given modern upgrades?</span>
+        </div>
+      </div>
+    
+      <div class="article--numbered">
+        <div class="article--numbered__image-container">
+          <img src="./assets/images/image-top-laptops.jpg" alt="A picture of keyboard">
+        </div>
+        <div class="article--numbered__content">
+          <span class="color-accent-200 fs-700 fw-bold">02</span>
+          <a href="#" class="link link--text color-accent-500 fw-bold">Top 10 Laptops of 2022</a>
+          <span class="fs-300 color-accent-400 line-height" style="--line-height: 1.75;">Our best picks for various needs and budgets.</span>
+        </div>
+      </div>
+    
+      <div class="article--numbered">
+        <div class="article--numbered__image-container">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="A picture of retro computer">
+        </div>
+        <div class="article--numbered__content">
+          <span class="color-accent-200 fs-700 fw-bold">03</span>
+          <a href="#" class="link link--text color-accent-500 fw-bold">The Growth of Gaming</a>
+          <span class="fs-300 color-accent-400 line-height" style="--line-height: 1.75;">How the pandemic has sparked fresh opportunities.</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <aside class="container mobile-menu" style="--padding-block: 1rem; --padding-inline: 1rem;">
+    <a href="#" class="link link--icon icon--close"></a>
+    <ul class="list">
+      <li class="list__item">
+        <a href="#" class="link link--text color-accent-300 fs-500">Home</a>
+      </li>
+      <li class="list__item">
+        <a href="#" class="link link--text color-accent-300 fs-500">New</a>
+      </li>
+      <li class="list__item">
+        <a href="#" class="link link--text color-accent-300 fs-500">Popular</a>
+      </li>
+      <li class="list__item">
+        <a href="#" class="link link--text color-accent-300 fs-500">Trending</a>
+      </li>
+      <li class="list__item">
+        <a href="#" class="link link--text color-accent-300 fs-500">Categories</a>
+      </li>
+    </ul>
+    <div class="attribution">
+      <a href="https://www.instagram.com/devchristopherii/" target="_blank" class="link link--text color-accent-400">Coded by Christopher</a>
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link link--text color-accent-400">&copy; Frontend Mentor</a>
+      <ul class="list">
+        <li class="list__item">
+          <a href="https://www.frontendmentor.io/profile/donchriscorleone" target="_blank" class="link link--text color-accent-400 fs-400">frontendmentor</a>
+        </li>
+        <li class="list__item">
+          <a href="https://www.instagram.com/devchristopherii/" target="_blank" class="link link--text color-accent-400 fs-400">Instagram</a>
+        </li>
+        <li class="list__item">
+          <a  href="https://github.com/donchriscorleone" target="_blank" class="link link--text color-accent-400 fs-400">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <a href="https://www.instagram.com/devchristopherii/" target="_blank" class="link link--text color-accent-400">Coded by Christopher</a>
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link link--text color-accent-400">&copy; Frontend Mentor</a>
+    <ul class="list list--inline">
+      <li class="list__item">
+        <a href="https://www.frontendmentor.io/profile/donchriscorleone" target="_blank" class="link link--text color-accent-400 fs-400">frontendmentor</a>
+      </li>
+      <li class="list__item">
+        <a href="https://www.instagram.com/devchristopherii/" target="_blank" class="link link--text color-accent-400 fs-400">Instagram</a>
+      </li>
+      <li class="list__item">
+        <a  href="https://github.com/donchriscorleone" target="_blank" class="link link--text color-accent-400 fs-400">GitHub</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
